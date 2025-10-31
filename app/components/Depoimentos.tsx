@@ -33,4 +33,21 @@ export default function Depoimentos() {
           <p style={{ fontFamily: "Open Sans, sans-serif", fontStyle: "italic" }}>
             “A personalização do chat de IA elevou o atendimento para outro patamar e gerou reconhecimento do nosso diferencial no mercado.”
           </p>
-          <strong style={{ display: "block", marginTop: "16px" }}>Maria Garcia — Gest
+          <strong style={{ display: "block", marginTop: "16px" }}>Maria Garcia — Gestora, Agência Digital</strong>
+        </div>
+        <div style={{
+          background: "#fff",
+          borderRadius: "12px",
+          boxShadow: "0 2px 4px #e2e2e2",
+          padding: "24px",
+          maxWidth: "340px"
+        }}>
+          <p style={{ fontFamily: "Open Sans, sans-serif", fontStyle: "italic" }}>
+            “Ótima entrega, equipe técnica acessível e soluções sob medida. Recomendo para qualquer empresa que busca inovação real.”
+          </p>
+          <strong style={{ display: "block", marginTop: "16px" }}>Carlos Muñoz — Diretor, Clube de Mentoria</strong>
+        </div>
+      </div>
+    </section>
+  );
+}
