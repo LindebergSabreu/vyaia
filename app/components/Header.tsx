@@ -26,8 +26,8 @@ export default function Header() {
           <Image
             src="/Logo.jpg"
             alt="Logo Via IA"
-            width={70}
-            height={70}
+            width={140}
+            height={140}
             priority
             style={{ background: "#fff", borderRadius: "16px" }}
           />
