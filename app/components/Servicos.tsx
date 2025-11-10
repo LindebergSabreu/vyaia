@@ -1,39 +1,237 @@
 export default function Servicos() {
   return (
-    <section id="servicos" style={{
-      padding: "70px 0 50px 0",
-      background: "#fff",
-      textAlign: "center"
-    }}>
-      <h2 style={{
-        fontFamily: "'Playfair Display', serif",
-        fontWeight: 700,
-        color: "#72979F",
-        fontSize: "2rem"
-      }}>Soluções</h2>
-      <ul style={{
-        padding: "0",
-        margin: "36px auto 0 auto",
-        maxWidth: "740px",
-        display: "flex",
-        gap: "35px",
-        flexWrap: "wrap",
-        justifyContent: "center",
-        listStyle: "none"
-      }}>
-        <li>
-          <strong style={{ color: "#3a4a54" }}>Diagnóstico Inteligente</strong><br />
-          Uso de IA para análise preditiva em ambientes de saúde e empresas.
-        </li>
-        <li>
-          <strong style={{ color: "#3a4a54" }}>Automação de Rotinas</strong><br />
-          Automatize tarefas operacionais para focar no que realmente importa.
-        </li>
-        <li>
-          <strong style={{ color: "#3a4a54" }}>Personalização</strong><br />
-          Soluções adaptadas às necessidades do seu negócio ou área.
-        </li>
-      </ul>
+    <section
+      style={{
+        width: '100%',
+        maxWidth: '1100px',
+        margin: '0 auto',
+        padding: '88px 24px 64px 24px',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        background: 'none',
+      }}
+    >
+      {/* Headline da seção */}
+      <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+        <h2
+          style={{
+            fontWeight: 700,
+            fontFamily: "'Montserrat', Arial, sans-serif",
+            fontSize: '2rem',
+            color: '#28445F',
+            marginBottom: '18px',
+            letterSpacing: '-0.5px',
+          }}
+        >
+          Soluções estratégicas de IA para seu negócio
+        </h2>
+        <p
+          style={{
+            fontSize: '1.08rem',
+            color: '#505050',
+            maxWidth: '620px',
+            margin: '0 auto',
+            lineHeight: '1.54',
+          }}
+        >
+          Consultoria personalizada, automação inteligente e tecnologia de impacto adaptadas aos seus desafios únicos.
+        </p>
+      </div>
+
+      {/* Grid de 3 soluções */}
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gap: '36px',
+          width: '100%',
+        }}
+      >
+        {/* Solução 1: Diagnóstico e Estratégia */}
+        <div
+          style={{
+            padding: '36px 28px',
+            borderRadius: '12px',
+            background: '#f9fafb',
+            border: '1px solid #e5e7eb',
+            transition: 'box-shadow 0.3s, border-color 0.3s',
+            cursor: 'pointer',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.boxShadow = '0 8px 28px #e2e5ea44';
+            e.currentTarget.style.borderColor = '#FAA084';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.boxShadow = 'none';
+            e.currentTarget.style.borderColor = '#e5e7eb';
+          }}
+        >
+          <h3
+            style={{
+              fontWeight: 700,
+              fontFamily: "'Montserrat', Arial, sans-serif",
+              fontSize: '1.24rem',
+              color: '#28445F',
+              marginBottom: '12px',
+              margin: '0 0 12px 0',
+            }}
+          >
+            Diagnóstico e Estratégia
+          </h3>
+          <p
+            style={{
+              fontSize: '0.99rem',
+              color: '#6b7280',
+              lineHeight: '1.6',
+              marginBottom: '16px',
+              minHeight: '60px',
+            }}
+          >
+            Análise profunda do seu contexto operacional, identificação de oportunidades e planejamento de implementação de IA com base em dados reais.
+          </p>
+          <div
+            style={{
+              fontSize: '0.9rem',
+              color: '#9ca3af',
+              fontStyle: 'italic',
+            }}
+          >
+            Ideal para: Empresas em transição digital, líderes em transformação
+          </div>
+        </div>
+
+        {/* Solução 2: Automação Inteligente */}
+        <div
+          style={{
+            padding: '36px 28px',
+            borderRadius: '12px',
+            background: '#f9fafb',
+            border: '1px solid #e5e7eb',
+            transition: 'box-shadow 0.3s, border-color 0.3s',
+            cursor: 'pointer',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.boxShadow = '0 8px 28px #e2e5ea44';
+            e.currentTarget.style.borderColor = '#FAA084';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.boxShadow = 'none';
+            e.currentTarget.style.borderColor = '#e5e7eb';
+          }}
+        >
+          <h3
+            style={{
+              fontWeight: 700,
+              fontFamily: "'Montserrat', Arial, sans-serif",
+              fontSize: '1.24rem',
+              color: '#28445F',
+              marginBottom: '12px',
+              margin: '0 0 12px 0',
+            }}
+          >
+            Automação Inteligente
+          </h3>
+          <p
+            style={{
+              fontSize: '0.99rem',
+              color: '#6b7280',
+              lineHeight: '1.6',
+              marginBottom: '16px',
+              minHeight: '60px',
+            }}
+          >
+            Implementação de workflows inteligentes, processamento de dados automatizado e sistemas que liberam seu time para atividades de maior valor estratégico.
+          </p>
+          <div
+            style={{
+              fontSize: '0.9rem',
+              color: '#9ca3af',
+              fontStyle: 'italic',
+            }}
+          >
+            Ideal para: Agências, operações, back-offices de qualquer porte
+          </div>
+        </div>
+
+        {/* Solução 3: Soluções Personalizadas */}
+        <div
+          style={{
+            padding: '36px 28px',
+            borderRadius: '12px',
+            background: '#f9fafb',
+            border: '1px solid #e5e7eb',
+            transition: 'box-shadow 0.3s, border-color 0.3s',
+            cursor: 'pointer',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.boxShadow = '0 8px 28px #e2e5ea44';
+            e.currentTarget.style.borderColor = '#FAA084';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.boxShadow = 'none';
+            e.currentTarget.style.borderColor = '#e5e7eb';
+          }}
+        >
+          <h3
+            style={{
+              fontWeight: 700,
+              fontFamily: "'Montserrat', Arial, sans-serif",
+              fontSize: '1.24rem',
+              color: '#28445F',
+              marginBottom: '12px',
+              margin: '0 0 12px 0',
+            }}
+          >
+            Soluções Personalizadas
+          </h3>
+          <p
+            style={{
+              fontSize: '0.99rem',
+              color: '#6b7280',
+              lineHeight: '1.6',
+              marginBottom: '16px',
+              minHeight: '60px',
+            }}
+          >
+            Desenvolvimento de soluções sob medida para problemas específicos do seu negócio — desde análise preditiva até modelos de IA aplicados ao seu setor.
+          </p>
+          <div
+            style={{
+              fontSize: '0.9rem',
+              color: '#9ca3af',
+              fontStyle: 'italic',
+            }}
+          >
+            Ideal para: Segmentos especializados, desafios complexos, inovação
+          </div>
+        </div>
+      </div>
+
+      {/* Parágrafo institucional de fechamento */}
+      <div
+        style={{
+          marginTop: '60px',
+          textAlign: 'center',
+          maxWidth: '720px',
+          padding: '32px 24px',
+          borderRadius: '12px',
+          background: '#f3f4f6',
+          borderLeft: '4px solid #FAA084',
+        }}
+      >
+        <p
+          style={{
+            fontSize: '1.02rem',
+            color: '#393f41',
+            lineHeight: '1.62',
+            margin: '0',
+            fontWeight: 500,
+          }}
+        >
+          Cada solução é pensada com cuidado, implementada com expertise técnica e acompanhada do princípio ao resultado. Consultoria não é apenas entregar — é transformar capacidades e gerar impacto real.
+        </p>
+      </div>
     </section>
   );
 }
