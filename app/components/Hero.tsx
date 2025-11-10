@@ -3,9 +3,9 @@ export default function Hero() {
     <section
       style={{
         width: '100%',
-        maxWidth: '900px',
+        maxWidth: '920px',
         margin: '0 auto',
-        padding: '60px 0 48px 0',
+        padding: '88px 24px 64px 24px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -13,33 +13,48 @@ export default function Hero() {
         background: 'none',
       }}
     >
+      {/* Headline principal */}
       <h1
         style={{
           fontWeight: 700,
           fontFamily: "'Montserrat', Arial, sans-serif",
-          fontSize: '2.1rem',
+          fontSize: '2.4rem',
           color: '#28445F',
-          marginBottom: '18px',
-          letterSpacing: '0',
-          lineHeight: '1.18',
+          marginBottom: '20px',
+          letterSpacing: '-0.5px',
+          lineHeight: '1.2',
+          maxWidth: '720px',
         }}
       >
-        Inteligência que cuida e transforma
+        Transforme IA em impacto real para seu negócio
       </h1>
 
+      {/* Subheadline de valor */}
       <p
         style={{
           fontWeight: 400,
           fontFamily: "'Montserrat', Arial, sans-serif",
-          fontSize: '1.12rem',
-          color: '#393f41',
-          marginBottom: '0px',
+          fontSize: '1.18rem',
+          color: '#505050',
+          marginBottom: '32px',
           maxWidth: '640px',
-          opacity: 0.95,
+          lineHeight: '1.5',
         }}
       >
-        Soluções de IA, automação e dados que ampliam possibilidades para pessoas, negócios e sociedade.
+        Consultoria, automação e soluções personalizadas de IA que potencializam pessoas, otimizam processos e geram crescimento sustentável.
       </p>
+
+      {/* Indicador de social proof sutil */}
+      <div
+        style={{
+          fontSize: '0.95rem',
+          color: '#6b7280',
+          fontFamily: "'Montserrat', Arial, sans-serif",
+          opacity: 0.85,
+        }}
+      >
+        Parceiros de PMEs e corporações que buscam transformação com ética e resultados reais.
+      </div>
     </section>
   );
 }
