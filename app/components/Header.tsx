@@ -2,85 +2,94 @@ import Image from 'next/image';
 
 export default function Header() {
   return (
-    <header style={{
-      width: "100%",
-      background: "#f7fafc",
-      borderBottom: "2px solid #e2e5ea",
-      padding: "28px 0 18px 0",
-      position: "sticky",
-      top: 0,
-      zIndex: 20
-    }}>
-      <nav style={{
-        maxWidth: "1200px",
-        margin: "0 auto",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between"
-      }}>
-        <div style={{
+    <header
+      style={{
+        width: "100%",
+        background: "#f7fafc",
+        borderBottom: "2px solid #e2e5ea",
+        padding: "0",
+        position: "sticky",
+        top: 0,
+        zIndex: 30,
+        minHeight: "140px",
+      }}
+    >
+      <nav
+        style={{
+          maxWidth: "1400px",
+          margin: "0 auto",
           display: "flex",
           alignItems: "center",
-          gap: "22px"
-        }}>
+          gap: "54px",
+          justifyContent: "space-between",
+          flexWrap: "wrap",
+          height: "100px"
+        }}
+      >
+        {/* Logo à esquerda */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            height: "160px",
+            minWidth: "170px",
+            justifyContent: "center",
+          }}
+        >
           <Image
-            src="/Logo.jpg"
-            alt="Logo Via IA"
-            width={140}
-            height={140}
+            src="/LogoSemFundo.png"
+            alt="Logo Vya IA"
+            width={160}
+            height={160}
             priority
-            style={{ background: "#fff", borderRadius: "16px" }}
+            style={{
+              background: "none",
+              borderRadius: "18px",
+              display: "block",
+            }}
           />
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <span style={{
-              fontFamily: "Montserrat, sans-serif",
-              fontWeight: 800,
-              color: "#72979F",
-              fontSize: "2.2rem",
-              letterSpacing: "1.1px",
-              lineHeight: "105%"
-            }}>
-              Via IA
-            </span>
-            <span style={{
-              fontFamily: "Open Sans, sans-serif",
-              color: "#222",
-              fontWeight: 600,
-              fontSize: "1.02rem",
-              marginTop: "-2px"
-            }}>
-              IA que cuida e transforma
-            </span>
-          </div>
         </div>
-        <ul style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "28px",
-          listStyle: "none",
-          margin: 0,
-          padding: 0
-        }}>
-          <li><a href="#servicos" style={{ color: "#444", textDecoration: "none", fontWeight: 700 }}>Soluções</a></li>
-          <li><a href="#valores" style={{ color: "#444", textDecoration: "none", fontWeight: 700 }}>Valores</a></li>
-          <li><a href="#depoimentos" style={{ color: "#444", textDecoration: "none", fontWeight: 700 }}>Impacto</a></li>
-          <li>
-            <a href="mailto:contato@viaia.com.br" style={{
-              color: "#FAA084", fontWeight: 800, textDecoration: "none",
-              border: "1.2px solid #faa084", borderRadius: "22px",
-              padding: "6px 24px 6px 24px", marginLeft: "10px"
-            }}>
-              Contato
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com/viaia" target="_blank" rel="noopener noreferrer"
-               title="Instagram Via IA">
-              <img src="/instagram.svg" alt="Instagram" width={29} height={29}
-                   style={{ verticalAlign: "middle" }} />
-            </a>
-          </li>
-          {/* Adicione outros ícones de redes sociais aqui */}
+        {/* Slogan institucional centralizado */}
+        <section
+          style={{
+            flex: 1,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <h1
+            style={{
+              fontFamily: "'Playfair Display', serif",
+              fontWeight: 700,
+              color: "#464646",
+              fontSize: "2.1rem",
+              letterSpacing: "0.02em",
+              lineHeight: 1.13,
+              margin: 0,
+              textAlign: "center",
+              maxWidth: "660px",
+            }}
+          >
+            Inteligência que cuida<br />e transforma!
+          </h1>
+        </section>
+        {/* Menu institucional à direita */}
+        <ul
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "32px",
+            listStyle: "none",
+            margin: 0,
+            padding: 0,
+          }}
+        >
+          <li><a href="#topo">Início</a></li>
+          <li><a href="#servicos">Soluções</a></li>
+          <li><a href="#valores">Valores</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </header>

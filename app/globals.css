@@ -1,26 +1,57 @@
-@import "tailwindcss";
+/* globals.css */
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* Fonte institucional: Montserrat */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7fafc;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Remove bullets e padroniza o menu */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a,
+nav ul li a:visited,
+nav ul li a:active {
+  color: #28445F !important;
+  text-decoration: none !important;
+  font-weight: 700;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.17rem;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  background: none !important;
+  transition: color 0.18s, border-bottom 0.18s;
+}
+
+/* Hover/foco */
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #FAA084 !important;
+  border-bottom: 2px solid #FAA084;
+  outline: none;
+}
+
+/* Reforce responsividade, se desejar */
+@media (max-width: 700px) {
+  nav ul {
+    gap: 16px;
+    font-size: 1rem;
+  }
 }

@@ -1,22 +1,36 @@
 export default function MissaoVisaoValores() {
   return (
-    <section style={{ padding: "48px 0", background: "#f4f5f7", textAlign: "center" }}>
-      <h2 style={{ fontFamily: "Montserrat, sans-serif", color: "#7A93A6" }}>Missão</h2>
-      <p style={{ maxWidth: "600px", margin: "0 auto", fontFamily: "Open Sans, sans-serif" }}>
-        Oferecer soluções de IA de alto impacto que humanizam a tecnologia, potencializam capacidades humanas e geram transformação real nos negócios e na vida das pessoas.
-      </p>
-      <h2 style={{ fontFamily: "Montserrat, sans-serif", color: "#7A93A6" }}>Visão</h2>
-      <p style={{ maxWidth: "600px", margin: "0 auto", fontFamily: "Open Sans, sans-serif" }}>
-        Ser referência nacional em inovação tecnológica e humanização da IA, combinando expertise técnica, empatia genuína e visão futurista para liderar a transformação digital ética e sustentável no Brasil.
-      </p>
-      <h2 style={{ fontFamily: "Montserrat, sans-serif", color: "#7A93A6" }}>Valores</h2>
-      <ul style={{ listStyle: "none", padding: 0, maxWidth: "600px", margin: "0 auto", fontFamily: "Open Sans, sans-serif" }}>
-        <li>Humanização</li>
-        <li>Excelência técnica</li>
-        <li>Inovação</li>
-        <li>Transparência</li>
-        <li>Compromisso com o cliente</li>
-      </ul>
+    <section id="valores" style={{
+      background: "#f7fafc",
+      padding: "60px 0",
+      textAlign: "center"
+    }}>
+      <h2 style={{
+        fontFamily: "'Playfair Display', serif",
+        fontWeight: 700,
+        color: "#72979F",
+        fontSize: "2rem"
+      }}>Valores</h2>
+      <div style={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        gap: "38px",
+        marginTop: "36px"
+      }}>
+        <div>
+          <h4 style={{ margin: 0, color: "#72979F", fontWeight: 700 }}>Missão</h4>
+          <p>Promover transformação positiva entregando soluções de IA que cuidam de pessoas, empresas e comunidades.</p>
+        </div>
+        <div>
+          <h4 style={{ margin: 0, color: "#72979F", fontWeight: 700 }}>Visão</h4>
+          <p>Ser referência nacional em inteligência emocional, social e operacional com tecnologia acessível.</p>
+        </div>
+        <div>
+          <h4 style={{ margin: 0, color: "#72979F", fontWeight: 700 }}>Valores</h4>
+          <p>Ética, empatia, inovação útil e compromisso com impacto real.</p>
+        </div>
+      </div>
     </section>
   );
 }

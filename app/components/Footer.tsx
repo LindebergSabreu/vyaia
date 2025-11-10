@@ -1,37 +1,27 @@
 export default function Footer() {
   return (
-    <footer style={{
-      background: "#72979F",
-      color: "#fff",
-      padding: "32px 0",
+    <footer id="contato" style={{
+      background: "#f7fafc",
+      padding: "42px 0 22px 0",
       textAlign: "center",
-      fontFamily: "Open Sans, sans-serif"
+      borderTop: "2px solid #e2e5ea"
     }}>
-      <div style={{ marginBottom: "16px", fontWeight: 600 }}>
-        &copy; {new Date().getFullYear()} VYA IA — IA que cuida e transforma
-      </div>
-      <div style={{ marginBottom: "8px" }}>
-        <a href="mailto:contato@vyaia.com.br" style={{
-          color: "#fff",
-          textDecoration: "underline",
-          margin: "0 12px"
-        }}>
-          contato@vyaia.com.br
-        </a>
-        |
-        <a href="https://instagram.com/vyaia" target="_blank" rel="noopener noreferrer" style={{
-          color: "#fff",
-          textDecoration: "underline",
-          margin: "0 12px"
-        }}>
-          Instagram
-        </a>
-      </div>
-      <div>
-        <small>
-          Desenvolvido por VYA IA. Todos os direitos reservados.
-        </small>
-      </div>
+      <h2 style={{
+        fontFamily: "'Playfair Display', serif",
+        color: "#72979F",
+        fontWeight: 700,
+        fontSize: "1.4rem",
+        margin: 0
+      }}>
+        Contato
+      </h2>
+      <p style={{ color: "#3a474b", marginTop: "13px", marginBottom: 0 }}>
+        contato@vyaia.com.br<br />
+        (11) 99999-9999
+      </p>
+      <p style={{ color: "#a6b4bc", marginTop: "18px", fontSize: "0.95rem" }}>
+        © {new Date().getFullYear()} Vya IA – IA que cuida e transforma.
+      </p>
     </footer>
   );
 }

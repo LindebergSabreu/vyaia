@@ -1,40 +1,35 @@
-// app/components/Hero.tsx
-
-import Image from 'next/image';
-
 export default function Hero() {
   return (
-    <section style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      background: '#fff',
-      padding: '64px 0'
+    <section id="topo" style={{
+      width: "100%",
+      minHeight: "320px",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      background: "#f7fafc",
+      padding: "40px 0 32px 0"
     }}>
-      <Image
-        src="/Logo.jpg"
-        alt="Logo VYA IA"
-        width={120}
-        height={120}
-        style={{ marginBottom: '16px' }}
-      />
-      <h1 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: '2.5rem', color: '#72979F', marginBottom: '16px' }}>
-        IA que cuida e transforma
-      </h1>
-      <p style={{ fontFamily: 'Open Sans, sans-serif', fontSize: '1.25rem', color: '#222', marginBottom: '32px', textAlign: 'center', maxWidth: '460px' }}>
-        A VYA IA cuida dos detalhes para que você cuide do que realmente importa.
-      </p>
-      <a href="#contato" style={{
-        background: '#FAA084',
-        color: '#fff',
-        fontFamily: 'Montserrat, sans-serif',
-        padding: '12px 32px',
-        borderRadius: '32px',
-        textDecoration: 'none',
-        fontWeight: 600
+      <h2 style={{
+        fontFamily: "'Playfair Display', serif",
+        fontWeight: 700,
+        fontSize: "2.3rem",
+        color: "#72979F",
+        marginBottom: "16px",
+        marginTop: 0,
+        textAlign: "center"
       }}>
-        Solicite uma demonstração
-      </a>
+        Bem-vindo à Vya IA
+      </h2>
+      <p style={{
+        maxWidth: "600px",
+        color: "#3a3a3a",
+        fontSize: "1.25rem",
+        textAlign: "center",
+        margin: 0
+      }}>
+        Soluções inteligentes para transformar e cuidar do seu negócio, saúde, bem-estar e muito mais.
+      </p>
     </section>
   );
 }
