@@ -15,83 +15,63 @@ export default function Hero() {
         textAlign: 'center',
       }}
     >
-      {/* Logo institucional centralizado */}
+      {/* Logo institucional discreto */}
       <Image
-        src="/LogoSemFundo.jpg"
+        src="/LogoSemFundo.jpg"  // ou outro arquivo institucional do /public
         alt="Vya IA Logo"
-        width={120}
-        height={120}
+        width={100}
+        height={100}
         priority
         style={{
-          marginBottom: '22px',
+          marginBottom: '18px',
           borderRadius: '18px',
-          boxShadow: '0 2px 18px #e2e5ea88',
+          boxShadow: '0 2px 12px #e2e5ea66',
+          opacity: 0.93,
         }}
       />
 
-      {/* Título forte institucional */}
+      {/* Título acolhedor e humano */}
       <h1
         style={{
           fontWeight: 700,
           fontFamily: "'Montserrat', Arial, sans-serif",
-          fontSize: '2.6rem',
+          fontSize: '2.3rem',
           color: '#28445F',
-          marginBottom: '22px',
-          letterSpacing: '-1px',
-          lineHeight: '1.14',
+          marginBottom: '18px',
+          letterSpacing: '0px',
+          lineHeight: '1.16',
         }}
       >
-        Automação e Inteligência Artificial <br /> para transformar negócios
+        Inteligência que cuida e transforma<br />pessoas, negócios e sociedade
       </h1>
 
-      {/* Frase de impacto contextualizada */}
-      <h2
+      {/* Texto explicativo consultivo */}
+      <p
         style={{
           fontWeight: 400,
           fontFamily: "'Montserrat', Arial, sans-serif",
-          fontSize: '1.37rem',
+          fontSize: '1.17rem',
           color: '#393f41',
-          marginBottom: '28px',
-          maxWidth: '620px',
-          opacity: '0.93',
+          marginBottom: '26px',
+          maxWidth: '660px',
+          opacity: 0.94,
         }}
       >
-        Soluções escaláveis e personalizadas que aceleram a produtividade, aprimoram decisões e humanizam processos na sua empresa.
-      </h2>
-
-      {/* Bloco de valores posicionais VYA IA */}
-      <p
-        style={{
-          fontSize: '1.08rem',
-          color: '#505050',
-          maxWidth: '520px',
-          margin: '0 auto 38px auto',
-        }}
-      >
-        Tecnologia, confiança e automação inteligente a serviço do seu crescimento sustentável. Somos o parceiro que cuida, transforma e gera impacto com IA de alto valor para negócios de qualquer porte e setor.
+        Soluções de IA pensadas para gerar impacto positivo, orientar decisões com sensibilidade e apoiar a evolução saudável de pessoas, equipes e clientes. Acreditamos que tecnologia só faz sentido quando transforma vidas e oportunidades de forma ética e sustentável.
       </p>
 
-      {/* Chamada para ação */}
-      <a
-        href="#contato"
+      {/* Bloco sobre parceria, confiança e propósito */}
+      <p
         style={{
-          display: 'inline-block',
-          background: '#FAA084',
-          color: '#fff',
-          padding: '18px 38px',
-          fontFamily: "'Montserrat', Arial, sans-serif",
-          fontWeight: 700,
-          borderRadius: '33px',
-          fontSize: '1.18rem',
-          letterSpacing: '0.02em',
-          boxShadow: '0 2px 22px #ecd6c9a0',
-          transition: 'background 0.18s',
-          textDecoration: 'none',
-          marginTop: '8px',
+          fontSize: '1.04rem',
+          color: '#505050',
+          maxWidth: '540px',
+          margin: '0 auto',
+          opacity: 0.84,
         }}
       >
-        Comece agora
-      </a>
+        Não vendemos soluções prontas. Construímos parcerias personalizadas, ouvindo, planejando e preparando o terreno para seu crescimento — com tecnologia, ética e comprometimento em cada etapa.
+      </p>
     </section>
   );
 }
