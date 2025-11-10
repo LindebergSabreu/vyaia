@@ -1,12 +1,4 @@
-Vamos incrementar o conteúdo do componente `Hero.tsx`, tornando-o mais atrativo e institucional, seguindo as diretrizes estratégicas da VYA IA (como exposto em seus arquivos de branding).
-
-Segue o arquivo completo para substituir:
-
-```tsx
-// app/components/Hero.tsx
-
 import Image from 'next/image';
-import logo from '/public/logo.jpg'; // ajuste conforme o arquivo real do logo
 
 export default function Hero() {
   return (
@@ -25,7 +17,7 @@ export default function Hero() {
     >
       {/* Logo institucional centralizado */}
       <Image
-        src={logo}
+        src="/image.jpg"
         alt="Vya IA Logo"
         width={120}
         height={120}
@@ -103,14 +95,3 @@ export default function Hero() {
     </section>
   );
 }
-```
-
-**Destaques do novo conteúdo:**
-- Mensagem institucional clara sobre propósito da VYA IA.
-- Frase de impacto que conecta soluções tecnológicas e sensibilidade humana.
-- Chamadas para ação e reforço dos valores (confiança, automação, impacto).
-- Visual limpo, fonte institucional e logo centralizado.
-
-Se quiser reforçar algum posicionamento, nicho ou valor VYA IA específico, basta pedir! Ajusto para manter seu site sempre relevante e alinhado ao branding.
-
-[1](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/135098457/240f0ad5-3508-42de-a165-e8d6a89134c7/Hero.tsx)
