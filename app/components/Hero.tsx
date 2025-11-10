@@ -10,7 +10,7 @@ export default function Hero() {
         flexDirection: 'column',
         alignItems: 'center',
         textAlign: 'center',
-        background: 'none',
+        background: '#ffffff',
       }}
     >
       {/* Headline principal */}
@@ -64,6 +64,7 @@ export default function Hero() {
               color: '#28445F',
               fontWeight: 600,
               marginBottom: '6px',
+              margin: '0 0 6px 0',
             }}
           >
             Humanização
@@ -73,6 +74,7 @@ export default function Hero() {
               fontSize: '0.92rem',
               color: '#6b7280',
               lineHeight: '1.5',
+              margin: '0',
             }}
           >
             Tecnologia que amplifica capacidades humanas
@@ -87,6 +89,7 @@ export default function Hero() {
               color: '#28445F',
               fontWeight: 600,
               marginBottom: '6px',
+              margin: '0 0 6px 0',
             }}
           >
             Expertise Técnica
@@ -96,6 +99,7 @@ export default function Hero() {
               fontSize: '0.92rem',
               color: '#6b7280',
               lineHeight: '1.5',
+              margin: '0',
             }}
           >
             Soluções fundamentadas em dados e inovação
@@ -110,6 +114,7 @@ export default function Hero() {
               color: '#28445F',
               fontWeight: 600,
               marginBottom: '6px',
+              margin: '0 0 6px 0',
             }}
           >
             Visão de Futuro
@@ -119,6 +124,7 @@ export default function Hero() {
               fontSize: '0.92rem',
               color: '#6b7280',
               lineHeight: '1.5',
+              margin: '0',
             }}
           >
             Antecipamos tendências com ética e propósito
