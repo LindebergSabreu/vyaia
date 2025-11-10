@@ -11,7 +11,7 @@ export default function Servicos() {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        background: 'none',
+        background: '#f9fafb',
       }}
     >
       {/* Headline da seção */}
@@ -24,6 +24,7 @@ export default function Servicos() {
             color: '#28445F',
             marginBottom: '18px',
             letterSpacing: '-0.5px',
+            margin: '0 0 18px 0',
           }}
         >
           Soluções estratégicas de IA para seu negócio
@@ -55,7 +56,7 @@ export default function Servicos() {
           style={{
             padding: '36px 28px',
             borderRadius: '12px',
-            background: '#f9fafb',
+            background: '#ffffff',
             border: '1px solid #e5e7eb',
             transition: 'box-shadow 0.3s, border-color 0.3s',
             cursor: 'pointer',
@@ -108,7 +109,7 @@ export default function Servicos() {
           style={{
             padding: '36px 28px',
             borderRadius: '12px',
-            background: '#f9fafb',
+            background: '#ffffff',
             border: '1px solid #e5e7eb',
             transition: 'box-shadow 0.3s, border-color 0.3s',
             cursor: 'pointer',
@@ -161,7 +162,7 @@ export default function Servicos() {
           style={{
             padding: '36px 28px',
             borderRadius: '12px',
-            background: '#f9fafb',
+            background: '#ffffff',
             border: '1px solid #e5e7eb',
             transition: 'box-shadow 0.3s, border-color 0.3s',
             cursor: 'pointer',
@@ -218,7 +219,7 @@ export default function Servicos() {
           maxWidth: '720px',
           padding: '32px 24px',
           borderRadius: '12px',
-          background: '#f3f4f6',
+          background: '#ffffff',
           borderLeft: '4px solid #FAA084',
         }}
       >
