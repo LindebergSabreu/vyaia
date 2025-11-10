@@ -3,7 +3,7 @@ export default function Hero() {
     <section
       style={{
         width: '100%',
-        maxWidth: '920px',
+        maxWidth: '960px',
         margin: '0 auto',
         padding: '88px 24px 64px 24px',
         display: 'flex',
@@ -18,43 +18,46 @@ export default function Hero() {
         style={{
           fontWeight: 700,
           fontFamily: "'Montserrat', Arial, sans-serif",
-          fontSize: '2.4rem',
+          fontSize: '2.3rem',
           color: '#28445F',
-          marginBottom: '20px',
+          marginBottom: '18px',
           letterSpacing: '-0.5px',
-          lineHeight: '1.2',
-          maxWidth: '720px',
+          lineHeight: '1.22',
+          maxWidth: '740px',
         }}
       >
-        Transforme IA em impacto real para seu negócio
+        IA que entende seu contexto e potencializa resultados
       </h1>
 
-      {/* Subheadline de valor */}
+      {/* Subheadline diferenciadora */}
       <p
         style={{
-          fontWeight: 400,
+          fontWeight: 500,
           fontFamily: "'Montserrat', Arial, sans-serif",
-          fontSize: '1.18rem',
-          color: '#505050',
-          marginBottom: '32px',
-          maxWidth: '640px',
-          lineHeight: '1.5',
+          fontSize: '1.15rem',
+          color: '#393f41',
+          marginBottom: '24px',
+          maxWidth: '680px',
+          lineHeight: '1.48',
+          opacity: 0.95,
         }}
       >
-        Consultoria, automação e soluções personalizadas de IA que potencializam pessoas, otimizam processos e geram crescimento sustentável.
+        Não oferecemos soluções prontas. Construímos parcerias estratégicas para transformar sua operação com automação inteligente, dados aplicados e inovação ética.
       </p>
 
-      {/* Indicador de social proof sutil */}
-      <div
+      {/* Parágrafo de contexto consultivo */}
+      <p
         style={{
-          fontSize: '0.95rem',
+          fontSize: '1.02rem',
           color: '#6b7280',
+          maxWidth: '620px',
+          margin: '0 auto',
+          lineHeight: '1.6',
           fontFamily: "'Montserrat', Arial, sans-serif",
-          opacity: 0.85,
         }}
       >
-        Parceiros de PMEs e corporações que buscam transformação com ética e resultados reais.
-      </div>
+        Da consultoria estratégica até a implementação completa — com cuidado, transparência e expertise técnica em cada etapa.
+      </p>
     </section>
   );
 }
