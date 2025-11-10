@@ -17,7 +17,7 @@ export default function Hero() {
     >
       {/* Logo institucional centralizado */}
       <Image
-        src="/image.jpg"
+        src="/LogoSemFundo.jpg"
         alt="Vya IA Logo"
         width={120}
         height={120}
