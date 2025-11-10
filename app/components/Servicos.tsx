@@ -1,3 +1,5 @@
+'use client';
+
 export default function Servicos() {
   return (
     <section
@@ -73,7 +75,6 @@ export default function Servicos() {
               fontFamily: "'Montserrat', Arial, sans-serif",
               fontSize: '1.24rem',
               color: '#28445F',
-              marginBottom: '12px',
               margin: '0 0 12px 0',
             }}
           >
@@ -86,6 +87,7 @@ export default function Servicos() {
               lineHeight: '1.6',
               marginBottom: '16px',
               minHeight: '60px',
+              margin: '0 0 16px 0',
             }}
           >
             Análise profunda do seu contexto operacional, identificação de oportunidades e planejamento de implementação de IA com base em dados reais.
@@ -126,7 +128,6 @@ export default function Servicos() {
               fontFamily: "'Montserrat', Arial, sans-serif",
               fontSize: '1.24rem',
               color: '#28445F',
-              marginBottom: '12px',
               margin: '0 0 12px 0',
             }}
           >
@@ -139,6 +140,7 @@ export default function Servicos() {
               lineHeight: '1.6',
               marginBottom: '16px',
               minHeight: '60px',
+              margin: '0 0 16px 0',
             }}
           >
             Implementação de workflows inteligentes, processamento de dados automatizado e sistemas que liberam seu time para atividades de maior valor estratégico.
@@ -179,7 +181,6 @@ export default function Servicos() {
               fontFamily: "'Montserrat', Arial, sans-serif",
               fontSize: '1.24rem',
               color: '#28445F',
-              marginBottom: '12px',
               margin: '0 0 12px 0',
             }}
           >
@@ -192,6 +193,7 @@ export default function Servicos() {
               lineHeight: '1.6',
               marginBottom: '16px',
               minHeight: '60px',
+              margin: '0 0 16px 0',
             }}
           >
             Desenvolvimento de soluções sob medida para problemas específicos do seu negócio — desde análise preditiva até modelos de IA aplicados ao seu setor.
