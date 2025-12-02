@@ -5,6 +5,7 @@ import FAQ from './components/FAQ';
 import Depoimentos from './components/Depoimentos';
 import CTA from './components/CTA';
 import Contato from './components/Contato';
+import SobreVYA from './components/SobreVYA';
 
 export const metadata = {
   title: 'VYA IA - Consultoria em Inteligência Artificial de Alto Impacto',
@@ -56,24 +57,20 @@ export default function Home() {
         <FAQ />
       </section>
 
-      {/* 4. Sobre - SobreVYA */}
-      <section id="sobre">
-        {/* SobreVYA component would go here if available */}
-        <div style={{ padding: '2rem', textAlign: 'center' }}>
-          <h2>Sobre a VYA IA</h2>
-          <p>Descubra nossa história, expertise e compromisso com transformação digital.</p>
-        </div>
-      </section>
-
-      {/* 5. Depoimentos */}
+      {/* 4. Depoimentos */}
       <section id="depoimentos">
         <Depoimentos />
       </section>
 
-      {/* CTA - Call to Action */}
+      {/* 5. Sobre - Storytelling da VYA IA */}
+      <section id="sobre">
+        <SobreVYA />
+      </section>
+
+      {/* 6. CTA - Call to Action */}
       <CTA />
 
-      {/* Contato */}
+      {/* 7. Contato */}
       <section id="contato">
         <Contato />
       </section>

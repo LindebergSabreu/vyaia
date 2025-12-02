@@ -15,49 +15,39 @@ export default function Header() {
     { label: 'Nossa Essência', href: '#nossa-essencia' },
     { label: 'Serviços', href: '#servicos' },
     { label: 'Dúvidas', href: '#faq' },
+    { label: 'Depoimentos', href: '#depoimentos' },
     { label: 'Sobre', href: '#sobre' },
   ];
 
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        {/* Logo Section */}
         <Link href="/" className={styles.logoSection}>
           <div className={styles.logoWrapper}>
             <img
-              src="/LogoSemFundo.png"
-              alt="VYA IA"
+              src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/91d5a39e-6bd4-4c58-8428-eb62730448e4"
+              alt="VYA IA Logo"
               className={styles.logoImg}
             />
           </div>
-          <p className={styles.tagline}>Inteligência que cuida e transforma!</p>
+          <p className={styles.tagline}>
+            Consultoria em IA <br /> de Alto Impacto
+          </p>
         </Link>
 
-        {/* Navigation */}
         <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
           {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={styles.navLink}
-              onClick={() => setIsMenuOpen(false)}
-            >
+            <a key={item.href} href={item.href} className={styles.navLink}>
               {item.label}
-            </Link>
+            </a>
           ))}
         </nav>
 
-        {/* CTA Button */}
-        <Link href="#contato" className={styles.ctaButton}>
-          Contato
-        </Link>
+        <a href="#contato" className={styles.ctaButton}>
+          Começar Agora
+        </a>
 
-        {/* Mobile Menu Toggle */}
-        <button
-          className={styles.menuToggle}
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
+        <button className={styles.menuToggle} onClick={toggleMenu}>
           <span></span>
           <span></span>
           <span></span>
