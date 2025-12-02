@@ -27,6 +27,7 @@ export default function Depoimentos() {
 
   return (
     <section
+      id="depoimentos"
       style={{
         width: '100%',
         maxWidth: '1100px',
@@ -38,7 +39,7 @@ export default function Depoimentos() {
         background: '#f9fafb',
       }}
     >
-      {/* Headline da seção */}
+      {/* Headline da seção - ATUALIZADO */}
       <div style={{ textAlign: 'center', marginBottom: '72px' }}>
         <h2
           style={{
@@ -51,7 +52,7 @@ export default function Depoimentos() {
             margin: '0 0 18px 0',
           }}
         >
-          Quem confia em nós
+          Histórias de impacto real com inteligência artificial humanizada
         </h2>
         <p
           style={{
@@ -62,7 +63,7 @@ export default function Depoimentos() {
             lineHeight: '1.54',
           }}
         >
-          Histórias de impacto real: empresas que transformaram operações e capacidades com a VYA IA.
+          Empresas, times e líderes que transformaram seus desafios com a VYA IA.
         </p>
       </div>
 

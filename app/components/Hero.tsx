@@ -1,135 +1,26 @@
+'use client';
+
+import Link from 'next/link';
+import styles from './Hero.module.css';
+
 export default function Hero() {
   return (
-    <section
-      style={{
-        width: '100%',
-        maxWidth: '1000px',
-        margin: '0 auto',
-        padding: '88px 24px 64px 24px',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        textAlign: 'center',
-        background: '#ffffff',
-      }}
-    >
-      {/* Headline principal */}
-      <h1
-        style={{
-          fontWeight: 700,
-          fontFamily: "'Montserrat', Arial, sans-serif",
-          fontSize: '2.35rem',
-          color: '#28445F',
-          marginBottom: '20px',
-          letterSpacing: '-0.6px',
-          lineHeight: '1.2',
-          maxWidth: '780px',
-        }}
-      >
-        Inteligência artificial que cuida, orienta e transforma
-      </h1>
+    <section className={styles.hero} role="region" aria-label="Seção introdutória principal">
+      <div className={styles.heroOverlay}></div>
 
-      {/* Subheadline institucional */}
-      <p
-        style={{
-          fontWeight: 400,
-          fontFamily: "'Montserrat', Arial, sans-serif",
-          fontSize: '1.14rem',
-          color: '#505050',
-          marginBottom: '38px',
-          maxWidth: '720px',
-          lineHeight: '1.52',
-          opacity: 0.94,
-        }}
-      >
-        Combinamos consultoria estratégica, automação inteligente e soluções personalizadas para empresas que buscam crescimento sustentável com tecnologia ética e impacto real.
-      </p>
+      <div className={styles.heroContent}>
+        <h1 className={styles.heroTitle}>
+          A VYA IA cuida dos detalhes para que você cuide do que realmente importa
+        </h1>
 
-      {/* Triplo valor: áreas de impacto */}
-      <div
-        style={{
-          display: 'flex',
-          gap: '32px',
-          justifyContent: 'center',
-          flexWrap: 'wrap',
-          maxWidth: '860px',
-          marginTop: '12px',
-        }}
-      >
-        <div style={{ flex: '1 1 220px', textAlign: 'center' }}>
-          <p
-            style={{
-              fontSize: '0.98rem',
-              fontFamily: "'Montserrat', Arial, sans-serif",
-              color: '#28445F',
-              fontWeight: 600,
-              marginBottom: '6px',
-              margin: '0 0 6px 0',
-            }}
-          >
-            Humanização
-          </p>
-          <p
-            style={{
-              fontSize: '0.92rem',
-              color: '#6b7280',
-              lineHeight: '1.5',
-              margin: '0',
-            }}
-          >
-            Tecnologia que amplifica capacidades humanas
-          </p>
-        </div>
+        <p className={styles.heroSubtitle}>
+          Consultoria estratégica em inteligência artificial humanizada, com expertise técnica e impacto real
+        </p>
 
-        <div style={{ flex: '1 1 220px', textAlign: 'center' }}>
-          <p
-            style={{
-              fontSize: '0.98rem',
-              fontFamily: "'Montserrat', Arial, sans-serif",
-              color: '#28445F',
-              fontWeight: 600,
-              marginBottom: '6px',
-              margin: '0 0 6px 0',
-            }}
-          >
-            Expertise Técnica
-          </p>
-          <p
-            style={{
-              fontSize: '0.92rem',
-              color: '#6b7280',
-              lineHeight: '1.5',
-              margin: '0',
-            }}
-          >
-            Soluções fundamentadas em dados e inovação
-          </p>
-        </div>
-
-        <div style={{ flex: '1 1 220px', textAlign: 'center' }}>
-          <p
-            style={{
-              fontSize: '0.98rem',
-              fontFamily: "'Montserrat', Arial, sans-serif",
-              color: '#28445F',
-              fontWeight: 600,
-              marginBottom: '6px',
-              margin: '0 0 6px 0',
-            }}
-          >
-            Visão de Futuro
-          </p>
-          <p
-            style={{
-              fontSize: '0.92rem',
-              color: '#6b7280',
-              lineHeight: '1.5',
-              margin: '0',
-            }}
-          >
-            Antecipamos tendências com ética e propósito
-          </p>
-        </div>
+        <Link href="#contato" className="btn btn--primary btn--large">
+          <span>Descubra Como Impactamos</span>
+          <span className="arrow">→</span>
+        </Link>
       </div>
     </section>
   );

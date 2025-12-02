@@ -1,0 +1,263 @@
+/* MissaoVisaoValores.module.css - Alto Contraste - FINAL */
+
+.section {
+  background: var(--color-background);
+  padding: clamp(2rem, 8vw, 5rem) 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: clamp(2rem, 6vw, 4rem);
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: clamp(14px, 2.5vw, 16px);
+  color: var(--color-slate-500);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+/* Cards */
+.card {
+  background: var(--color-white);
+  border-radius: 16px;
+  border: 1px solid var(--color-border);
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: currentColor;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: currentColor;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+/* Card Color Variants */
+.card--heart {
+  color: #8b5cf6; /* Purple */
+}
+
+.card--sparkle {
+  color: #f59e0b; /* Amber */
+}
+
+.card--eye {
+  color: #06b6d4; /* Cyan */
+}
+
+/* Icon Container */
+.iconContainer {
+  margin-bottom: clamp(1rem, 3vw, 1.5rem);
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: currentColor;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+  color: white;
+}
+
+.icon--heart {
+  background: #8b5cf6;
+  color: white;
+}
+
+.icon--sparkle {
+  background: #f59e0b;
+  color: white;
+}
+
+.icon--eye {
+  background: #06b6d4;
+  color: white;
+}
+
+.card:hover .icon {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.svgIcon {
+  width: 32px;
+  height: 32px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.1));
+}
+
+/* Card Title */
+.cardTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(18px, 4vw, 24px);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+/* Card Description */
+.cardDescription {
+  font-family: 'Open Sans', sans-serif;
+  font-size: clamp(13px, 2.2vw, 15px);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(1.5rem, 3vw, 2rem);
+  }
+
+  .card {
+    align-items: flex-start;
+    text-align: left;
+    border-radius: 12px;
+    padding: clamp(1.75rem, 3vw, 2rem);
+  }
+
+  .card:hover::before {
+    left: 0;
+    right: auto;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, currentColor, transparent);
+    opacity: 1;
+  }
+
+  .iconContainer {
+    margin-bottom: clamp(1.25rem, 2vw, 1.5rem);
+  }
+
+  .icon {
+    margin: 0;
+  }
+
+  .cardTitle {
+    text-align: left;
+  }
+
+  .cardDescription {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 5rem 0;
+  }
+
+  .card {
+    border-radius: 12px;
+    padding: 2rem;
+  }
+
+  .card:hover {
+    transform: translateY(-12px);
+  }
+
+  .icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .svgIcon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .icon {
+    transition: none;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .card {
+    background: var(--color-surface);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  .icon--heart {
+    background: #a78bfa;
+    color: white;
+  }
+
+  .icon--sparkle {
+    background: #fbbf24;
+    color: white;
+  }
+
+  .icon--eye {
+    background: #22d3ee;
+    color: white;
+  }
+}
