@@ -6,7 +6,7 @@ export default function Contato() {
   return (
     <section className="section" id="contato" role="region" aria-label="Contato">
       <div className="container">
-        <h2 className="section-title">Fale com a VYA IA</h2>
+        <h2 className="section-title">Fale com a Vya IA</h2>
 
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <p style={{ textAlign: 'center', marginBottom: '2rem', color: '#9ca3af', fontSize: 'clamp(14px, 3vw, 16px)' }}>

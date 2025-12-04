@@ -7,7 +7,7 @@ const faqs = [
     id: 1,
     pergunta: 'O que é consultoria em IA?',
     resposta:
-      'Consultoria em IA é um serviço especializado que ajuda empresas a diagnosticar oportunidades, planejar estratégias e implementar soluções de inteligência artificial alinhadas aos seus objetivos de negócio. A VYA IA oferece abordagem humanizada que equilibra expertise técnica com cuidado genuíno.',
+      'Consultoria em IA é um serviço especializado que ajuda empresas a diagnosticar oportunidades, planejar estratégias e implementar soluções de inteligência artificial alinhadas aos seus objetivos de negócio. A Vya IA oferece abordagem humanizada que equilibra expertise técnica com cuidado genuíno.',
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const faqs = [
     id: 4,
     pergunta: 'Vocês garantem que a IA é ética e segura?',
     resposta:
-      'Sim. Transparência e ética no uso de IA são valores centrais da VYA IA. Implementamos protocolos de segurança, privacidade de dados e viés justo em todas as soluções, alinhadas às normas regulatórias brasileiras.',
+      'Sim. Transparência e ética no uso de IA são valores centrais da Vya IA. Implementamos protocolos de segurança, privacidade de dados e viés justo em todas as soluções, alinhadas às normas regulatórias brasileiras.',
   },
 ];
 

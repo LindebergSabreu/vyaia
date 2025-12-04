@@ -1,11 +1,9 @@
-import type { Metadata } from 'next';
-import Header from '@/app/components/Header';
-import Footer from '@/app/components/Footer';
 import './globals.css';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'VYA IA - Consultoria em Inteligência Artificial',
-  description: 'Consultoria estratégica em inteligência artificial humanizada, com expertise técnica e impacto real',
+  title: 'Vya IA',
+  description: 'Inteligência que cuida e transforma.',
 };
 
 export default function RootLayout({
@@ -16,9 +14,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body>
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );

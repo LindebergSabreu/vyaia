@@ -1,79 +1,29 @@
+'use client';
+
+import Header from './components/Header';
 import Hero from './components/Hero';
 import MissaoVisaoValores from './components/MissaoVisaoValores';
 import Servicos from './components/Servicos';
 import FAQ from './components/FAQ';
 import Depoimentos from './components/Depoimentos';
+import SobreVYA from './components/SobreVYA';
 import CTA from './components/CTA';
 import Contato from './components/Contato';
-import SobreVYA from './components/SobreVYA';
-
-export const metadata = {
-  title: 'VYA IA - Consultoria em Inteligência Artificial de Alto Impacto',
-  description:
-    'Consultoria estratégica em IA humanizada. Transformamos negócios com expertise técnica, cuidado genuíno e inovação. Soluções de alto impacto para sua transformação digital.',
-  keywords:
-    'inteligência artificial, consultoria IA, automação de processos, soluções em IA, transformação digital, machine learning, IA generativa',
-  authors: [{ name: 'VYA IA', url: 'https://vyaia.com.br' }],
-  openGraph: {
-    type: 'website',
-    url: 'https://vyaia.com.br',
-    title: 'VYA IA - Consultoria em Inteligência Artificial',
-    description: 'Transformação digital com expertise técnica e impacto real.',
-    images: [
-      {
-        url: 'https://vyaia.com.br/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'VYA IA - Consultoria em IA',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'VYA IA - Consultoria em Inteligência Artificial',
-    description: 'Consultoria estratégica em IA humanizada.',
-    images: ['https://vyaia.com.br/og-image.png'],
-  },
-};
+import Footer from './components/Footer';
 
 export default function Home() {
   return (
-    <main>
-      {/* Hero Section */}
+    <>
+      <Header />
       <Hero />
-
-      {/* 1. Nossa Essência - Missão, Visão e Valores */}
-      <section id="nossa-essencia">
-        <MissaoVisaoValores />
-      </section>
-
-      {/* 2. Serviços */}
-      <section id="servicos">
-        <Servicos />
-      </section>
-
-      {/* 3. Dúvidas - FAQ */}
-      <section id="faq">
-        <FAQ />
-      </section>
-
-      {/* 4. Depoimentos */}
-      <section id="depoimentos">
-        <Depoimentos />
-      </section>
-
-      {/* 5. Sobre - Storytelling da VYA IA */}
-      <section id="sobre">
-        <SobreVYA />
-      </section>
-
-      {/* 6. CTA - Call to Action */}
+      <MissaoVisaoValores />
+      <Servicos />
+      <FAQ />
+      <Depoimentos />
+      <SobreVYA />
       <CTA />
-
-      {/* 7. Contato */}
-      <section id="contato">
-        <Contato />
-      </section>
-    </main>
+      <Contato />
+      <Footer />
+    </>
   );
 }

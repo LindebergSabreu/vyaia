@@ -739,14 +739,14 @@ select.form-control {
 
 /* END PERPLEXITY DESIGN SYSTEM */
 /* ========================================
-   VYA IA - GLOBALS CSS (Next.js)
+   Vya IA - GLOBALS CSS (Next.js)
    Variáveis + Reset + Estilos Base
    ======================================== */
 
 /* ==================== CSS VARIABLES ==================== */
 
 :root {
-  /* Cores - Paleta VYA IA - mapped to design system */
+  /* Cores - Paleta Vya IA - mapped to design system */
   --color-vya-primary: var(--color-slate-900);      /* Azul Royal -> Design System Primary */
   --color-vya-secondary: #7c3aed;                   /* Roxo - Custom accent */
   --color-vya-complementary-1: var(--color-teal-500); /* Verde Menta -> Teal */

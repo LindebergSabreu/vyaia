@@ -3,7 +3,7 @@
 export default function Depoimentos() {
   const testimonials = [
     {
-      quote: 'A VYA IA revolucionou nossa eficiência operacional com soluções personalizadas. Em 3 meses, aumentamos produtividade em 45%.',
+      quote: 'A Vya IA revolucionou nossa eficiência operacional com soluções personalizadas. Em 3 meses, aumentamos produtividade em 45%.',
       author: 'André',
       company: 'HealthTech Paulista',
       role: 'CEO & Founder',
@@ -63,7 +63,7 @@ export default function Depoimentos() {
             lineHeight: '1.54',
           }}
         >
-          Empresas, times e líderes que transformaram seus desafios com a VYA IA.
+          Empresas, times e líderes que transformaram seus desafios com a Vya IA.
         </p>
       </div>
 

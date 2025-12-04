@@ -11,7 +11,7 @@ export default function Footer() {
         <div className={styles.content}>
           {/* Brand */}
           <div className={styles.brand}>
-            <h3>VYA IA</h3>
+            <h3>Vya IA</h3>
             <p>Consultoria em Inteligência Artificial de Alto Impacto</p>
           </div>
 
@@ -85,7 +85,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className={styles.bottom}>
-          <p>&copy; 2025 VYA IA. Todos os direitos reservados.</p>
+          <p>&copy; 2025 Vya IA. Todos os direitos reservados.</p>
           <div className={styles.legal}>
             <Link href="/privacidade" className={styles.legalLink}>
               Política de Privacidade
