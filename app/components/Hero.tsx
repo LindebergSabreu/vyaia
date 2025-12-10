@@ -115,7 +115,6 @@ export default function Hero() {
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
             gap: '2rem',
-            margin: '2.5rem 0',
             maxWidth: '800px',
             margin: '2.5rem auto'
           }}
