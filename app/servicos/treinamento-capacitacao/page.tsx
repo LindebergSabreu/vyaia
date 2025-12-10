@@ -39,7 +39,7 @@ export default function TreinamentoCapacitacao() {
           </div>
 
           <div style={{ marginTop: '40px', textAlign: 'center' }}>
-            <a href="#contato" style={{
+            <a href="/#contato" style={{
               backgroundColor: '#4DBCF1',
               color: 'white',
               padding: '15px 40px',

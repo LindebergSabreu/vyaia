@@ -39,7 +39,7 @@ export default function AutomacaoProcessos() {
           </div>
 
           <div style={{ marginTop: '40px', textAlign: 'center' }}>
-            <a href="#contato" style={{
+            <a href="/#contato" style={{
               backgroundColor: '#7C6FD8',
               color: 'white',
               padding: '15px 40px',

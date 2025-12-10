@@ -39,7 +39,7 @@ export default function SolucoesCustomizadas() {
           </div>
 
           <div style={{ marginTop: '40px', textAlign: 'center' }}>
-            <a href="#contato" style={{
+            <a href="/#contato" style={{
               backgroundColor: '#F5A623',
               color: 'white',
               padding: '15px 40px',
