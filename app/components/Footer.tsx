@@ -25,9 +25,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#sobre" className={styles.link}>
+                <Link href="#sobrevyaia" className={styles.link}>
                   Sobre
-                </Link>
+                </Link>\
               </li>
               <li>
                 <Link href="#servicos" className={styles.link}>

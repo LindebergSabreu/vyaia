@@ -11,33 +11,44 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const navItems = [
-    { label: 'Nossa Essência', href: '#nossa-essencia' },
-    { label: 'Serviços', href: '#servicos' },
-    { label: 'Dúvidas', href: '#faq' },
-    { label: 'Sobre', href: '#sobre' },
-  ];
+ const navItems = [
+  { label: 'Nossa Essência', href: '/#missao-visao-valores' },
+  { label: 'Serviços', href: '/#servicos' },
+  { label: 'Dúvidas', href: '/#faq' },
+  { label: 'Sobre', href: '/#sobrevyaia' },
+];
 
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        {/* Logo Section */}
-        <Link href="/" className={styles.logoSection}>
-          <div className={styles.logoWrapper}>
-            <img
-              src="/LogoSemFundo.png"
-              alt="Vya IA"
-              className={styles.logoImg}
-            />
-          </div>
-          <p className={styles.tagline}>Inteligência que cuida e transforma!</p>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexShrink: 0 }}>
+        <Link href="/#hero" className={styles.logo}>
+          <img 
+            src="/logo-vya-ia.webp" 
+            alt="Vya IA Logo" 
+            className={styles.logoImage}
+            style={{ height: '85px', width: 'auto', objectFit: 'contain' }}
+          />
+
         </Link>
 
-        {/* Navigation */}
+          <p style={{ margin: 0, fontSize: '14px', color: '#7b68ee', fontWeight: 500, lineHeight: 1.3 }}>
+            Inteligência que cuida e transforma
+          </p>
+        </div>
+
+        <button
+          className={styles.menuToggle}
+          onClick={toggleMenu}
+          aria-label="Menu toggle"
+        >
+          ☰
+        </button>
+
         <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
           {navItems.map((item) => (
             <Link
-              key={item.href}
+              key={item.label}
               href={item.href}
               className={styles.navLink}
               onClick={() => setIsMenuOpen(false)}
@@ -47,21 +58,9 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* CTA Button */}
         <Link href="#contato" className={styles.ctaButton}>
           Contato
         </Link>
-
-        {/* Mobile Menu Toggle */}
-        <button
-          className={styles.menuToggle}
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
       </div>
     </header>
   );

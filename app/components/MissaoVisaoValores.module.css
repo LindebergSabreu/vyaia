@@ -60,13 +60,11 @@
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   width: 64px;
   height: 64px;
   background: rgba(255, 155, 102, 0.1);
   border-radius: 12px;
-  align-items: center;
-  justify-content: center;
 }
 
 .cardTitle {
@@ -112,6 +110,7 @@
   font-weight: 600;
 }
 
+/* Responsividade Mobile */
 @media (max-width: 768px) {
   .container {
     padding: 60px 20px;
@@ -141,5 +140,13 @@
 
   .cardTitle {
     font-size: 20px;
+  }
+
+  .cardDescription {
+    font-size: 14px;
+  }
+
+  .valuesList li {
+    font-size: 13px;
   }
 }
