@@ -1,54 +1,51 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useState } from 'react';
-import styles from './Header.module.css';
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import styles from "./Header.module.css";
+
+const navItems = [
+  { label: "Essência", href: "/#missao-visao-valores" },
+  { label: "Serviços", href: "/#servicos" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Sobre", href: "/#sobrevyaia" },
+];
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
- const navItems = [
-  { label: 'Nossa Essência', href: '/#missao-visao-valores' },
-  { label: 'Serviços', href: '/#servicos' },
-  { label: 'Dúvidas', href: '/#faq' },
-  { label: 'Sobre', href: '/#sobrevyaia' },
-];
-
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexShrink: 0 }}>
-        <Link href="/#hero" className={styles.logo}>
-          <img 
-            src="/logo-vya-ia.webp" 
-            alt="Vya IA Logo" 
+        <Link href="/#hero" className={styles.logoSection} onClick={() => setIsMenuOpen(false)}>
+          <Image
+            src="/logo-vya-ia.webp"
+            alt="Vya IA"
+            width={170}
+            height={66}
+            priority
             className={styles.logoImage}
-            style={{ height: '85px', width: 'auto', objectFit: 'contain' }}
           />
-
+          <span className={styles.tagline}>Inteligência que cuida e transforma</span>
         </Link>
-
-          <p style={{ margin: 0, fontSize: '14px', color: '#7b68ee', fontWeight: 500, lineHeight: 1.3 }}>
-            Inteligência que cuida e transforma
-          </p>
-        </div>
 
         <button
           className={styles.menuToggle}
-          onClick={toggleMenu}
-          aria-label="Menu toggle"
+          onClick={() => setIsMenuOpen((value) => !value)}
+          aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
+          aria-expanded={isMenuOpen}
+          type="button"
         >
-          ☰
+          <span />
+          <span />
+          <span />
         </button>
 
-        <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
+        <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ""}`} aria-label="Navegação principal">
           {navItems.map((item) => (
             <Link
-              key={item.label}
+              key={item.href}
               href={item.href}
               className={styles.navLink}
               onClick={() => setIsMenuOpen(false)}
@@ -58,7 +55,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <Link href="#contato" className={styles.ctaButton}>
+        <Link href="/#contato" className={styles.ctaButton} onClick={() => setIsMenuOpen(false)}>
           Contato
         </Link>
       </div>

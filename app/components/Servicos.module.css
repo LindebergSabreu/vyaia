@@ -1,257 +1,158 @@
-/* Servicos.module.css - Nossas Áreas de Atuação - VERSÃO FINAL */
-
 .section {
-  background: var(--color-background);
-  padding: clamp(3rem, 8vw, 5rem) 0;
+  background: #ffffff;
+  padding: clamp(3.5rem, 8vw, 6rem) 0;
 }
 
 .container {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 var(--spacing-vya-md);
+  max-width: 1200px;
+  padding: 0 1.5rem;
 }
 
 .header {
+  margin: 0 auto clamp(2rem, 5vw, 3rem);
+  max-width: 820px;
   text-align: center;
-  margin-bottom: clamp(2.5rem, 6vw, 4rem);
+}
+
+.kicker {
+  color: #0f766e;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
 }
 
 .title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: clamp(28px, 5vw, 42px);
-  font-weight: 700;
-  color: var(--color-primary);
-  margin: 0 0 1rem 0;
-  letter-spacing: -0.5px;
+  color: #1f3a52;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: 0;
+  line-height: 1.08;
+  margin: 0;
 }
 
 .subtitle {
-  font-family: 'Open Sans', sans-serif;
-  font-size: clamp(14px, 2.5vw, 16px);
-  color: var(--color-slate-500);
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.75;
+  margin: 1rem auto 0;
+  max-width: 720px;
 }
 
-/* Grid Layout - Responsivo */
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: clamp(1.5rem, 4vw, 2rem);
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-/* Cards Base */
 .card {
-  background: var(--color-white);
-  border: 1.5px solid var(--color-border);
-  border-radius: 12px;
-  padding: clamp(1.5rem, 4vw, 2rem);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  position: relative;
-  overflow: hidden;
-}
-
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: currentColor;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  min-height: 260px;
+  padding: 1.35rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
   border-color: currentColor;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  transform: translateY(-3px);
 }
 
-.card:hover::before {
-  transform: scaleX(1);
+.consultoria {
+  color: #7c3aed;
 }
 
-/* Card Color Variants */
-.card--consultoria {
-  color: #7c3aed; /* Purple-600 */
+.solucoes {
+  color: #d97706;
 }
 
-.card--solucoes {
-  color: #f59e0b; /* Amber-500 */
+.plataformas {
+  color: #0284c7;
 }
 
-.card--plataformas {
-  color: #0ea5e9; /* Sky-500 */
+.automacao {
+  color: #0f766e;
 }
 
-.card--automacao {
-  color: #8b5cf6; /* Violet-500 */
+.treinamento {
+  color: #475569;
 }
 
-.card--treinamento {
-  color: #06b6d4; /* Cyan-500 */
+.trafego {
+  color: #be123c;
 }
 
-/* Icon Container */
-.iconContainer {
-  margin-bottom: 1.5rem;
-  display: flex;
-  align-items: center;
-}
-
-.icon {
-  width: 64px;
-  height: 64px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.badge {
+  align-self: flex-start;
+  background: color-mix(in srgb, currentColor 10%, white);
+  border-radius: 999px;
   color: currentColor;
-  transition: all 0.3s ease;
+  font-size: 0.76rem;
+  font-weight: 900;
+  margin-bottom: 1.1rem;
+  padding: 0.38rem 0.7rem;
 }
 
-.icon--consultoria {
-  background: rgba(124, 58, 237, 0.1);
-}
-
-.icon--solucoes {
-  background: rgba(245, 158, 11, 0.1);
-}
-
-.icon--plataformas {
-  background: rgba(14, 165, 233, 0.1);
-}
-
-.icon--automacao {
-  background: rgba(139, 92, 246, 0.1);
-}
-
-.icon--treinamento {
-  background: rgba(6, 182, 212, 0.1);
-}
-
-.svgIcon {
-  width: 32px;
-  height: 32px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.card:hover .icon {
-  transform: scale(1.08);
-}
-
-/* Card Title */
 .cardTitle {
-  font-family: 'Montserrat', sans-serif;
-  font-size: clamp(16px, 3vw, 20px);
-  font-weight: 700;
-  color: var(--color-primary);
-  margin: 0 0 1rem 0;
-  line-height: 1.3;
+  color: #1f3a52;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
 }
 
-/* Card Description */
 .cardDescription {
-  font-family: 'Open Sans', sans-serif;
-  font-size: clamp(13px, 2.2vw, 15px);
-  color: var(--color-text-secondary);
-  line-height: 1.7;
-  margin: 0 0 1.5rem 0;
-  flex-grow: 1;
+  color: #64748b;
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 0 0 1.4rem;
 }
 
-/* Link "Saiba Mais" */
-.link {
-  display: inline-flex;
+.cardLink {
   align-items: center;
-  gap: 0.5rem;
   color: currentColor;
-  font-weight: 600;
-  font-size: clamp(13px, 2vw, 14px);
-  text-decoration: none;
-  transition: all 0.3s ease;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.link:hover {
-  gap: 0.75rem;
+  display: inline-flex;
+  font-weight: 900;
+  gap: 0.4rem;
 }
 
 .arrow {
-  display: inline-block;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.2s ease;
 }
 
-.link:hover .arrow {
+.cardLink:hover .arrow {
   transform: translateX(3px);
 }
 
-/* Responsive - Tablet (768px) */
-@media (min-width: 768px) {
+.cardLink:focus-visible {
+  border-radius: 4px;
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+@media (max-width: 980px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: clamp(1.5rem, 3vw, 2rem);
-  }
-
-  .section {
-    padding: clamp(3.5rem, 8vw, 5rem) 0;
-  }
-
-  .card {
-    position: relative;
   }
 }
 
-/* Responsive - Desktop (1024px) */
-@media (min-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
-
-  .card {
-    padding: 2rem;
-    border-radius: 12px;
-  }
-
-  .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
-  }
-
-  .section {
-    padding: 5rem 0;
-  }
-}
-
-/* Large Desktop (1440px) */
-@media (min-width: 1440px) {
+@media (max-width: 640px) {
   .container {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
-  .card {
-    padding: 2.5rem;
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
 
-/* Accessibility */
 @media (prefers-reduced-motion: reduce) {
   .card,
-  .link,
-  .icon {
-    transition: none;
-  }
-
-  .card::before,
   .arrow {
     transition: none;
   }
@@ -259,31 +160,4 @@
   .card:hover {
     transform: none;
   }
-
-  .card:hover .icon {
-    transform: none;
-  }
-}
-
-/* Dark Mode */
-@media (prefers-color-scheme: dark) {
-  .card {
-    background: var(--color-surface);
-    border-color: rgba(255, 255, 255, 0.1);
-  }
-
-  .card:hover {
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
-  }
-}
-
-/* Focus para acessibilidade */
-.link:focus {
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
-  border-radius: 2px;
-}
-
-.card:focus-within {
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
 }

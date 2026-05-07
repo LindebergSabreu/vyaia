@@ -1,13 +1,10 @@
 'use client';
 
-import Header from '@/app/components/Header';
-import Footer from '@/app/components/Footer';
+import Link from 'next/link';
 
 export default function SolucoesCustomizadas() {
   return (
-    <>
-      <Header />
-      <main>
+    <main>
         <section style={{ padding: '60px 20px', maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ marginBottom: '40px' }}>
             <h1 style={{ color: '#F5A623', fontSize: '2.5rem', marginBottom: '20px' }}>
@@ -39,7 +36,7 @@ export default function SolucoesCustomizadas() {
           </div>
 
           <div style={{ marginTop: '40px', textAlign: 'center' }}>
-            <a href="/#contato" style={{
+            <Link href="/#contato" style={{
               backgroundColor: '#F5A623',
               color: 'white',
               padding: '15px 40px',
@@ -49,11 +46,9 @@ export default function SolucoesCustomizadas() {
               display: 'inline-block'
             }}>
               Desenvolver Solução
-            </a>
+            </Link>
           </div>
         </section>
       </main>
-      <Footer />
-    </>
   );
 }

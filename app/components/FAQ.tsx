@@ -1,31 +1,29 @@
-'use client';
-
-import styles from './FAQ.module.css';
+import styles from "./FAQ.module.css";
 
 const faqs = [
   {
     id: 1,
-    pergunta: 'O que é consultoria em IA?',
+    pergunta: "Como começa um projeto com a Vya IA?",
     resposta:
-      'Consultoria em IA é um serviço especializado que ajuda empresas a diagnosticar oportunidades, planejar estratégias e implementar soluções de inteligência artificial alinhadas aos seus objetivos de negócio. A Vya IA oferece abordagem humanizada que equilibra expertise técnica com cuidado genuíno.',
+      "Começamos com diagnóstico do cenário, objetivos, processos e dados disponíveis. A partir disso, priorizamos oportunidades e desenhamos um plano de execução realista.",
   },
   {
     id: 2,
-    pergunta: 'Vocês atendem empresas de qual tamanho?',
+    pergunta: "A Vya IA atende pequenas e médias empresas?",
     resposta:
-      'Atendemos desde PMEs até corporações. Nossas soluções são personalizadas para o seu estágio de maturidade em IA, orçamento e complexidade. O importante é o impacto real que a tecnologia pode gerar no seu negócio.',
+      "Sim. O escopo é ajustado à maturidade, orçamento e urgência de cada empresa. A prioridade é encontrar aplicações que gerem impacto mensurável.",
   },
   {
     id: 3,
-    pergunta: 'Qual é o ROI esperado de uma implementação de IA?',
+    pergunta: "Vocês desenvolvem soluções ou apenas consultoria?",
     resposta:
-      'O ROI varia conforme o nicho e solução, mas clientes típicos veem retorno entre 200-600% em 12 meses, através de aumento de produtividade, redução de custos e novas receitas. Fazemos análise específica na consultoria inicial.',
+      "Atuamos nas duas frentes: estratégia, desenho técnico, implementação, integração, treinamento e evolução contínua do projeto.",
   },
   {
     id: 4,
-    pergunta: 'Vocês garantem que a IA é ética e segura?',
+    pergunta: "Como vocês lidam com segurança e governança?",
     resposta:
-      'Sim. Transparência e ética no uso de IA são valores centrais da Vya IA. Implementamos protocolos de segurança, privacidade de dados e viés justo em todas as soluções, alinhadas às normas regulatórias brasileiras.',
+      "Avaliamos riscos, dados sensíveis, responsabilidades, rastreabilidade e limites de uso desde o início. IA só faz sentido quando pode ser operada com confiança.",
   },
 ];
 
@@ -33,7 +31,10 @@ export default function FAQ() {
   return (
     <section className={styles.section} id="faq" role="region" aria-label="Perguntas frequentes">
       <div className="container">
-        <h2 className="section-title">Perguntas Frequentes</h2>
+        <div className="section-heading">
+          <p className="section-kicker">FAQ</p>
+          <h2 className="section-title">Perguntas frequentes</h2>
+        </div>
 
         <div className={styles.list}>
           {faqs.map((faq) => (
