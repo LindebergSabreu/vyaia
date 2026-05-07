@@ -30,8 +30,8 @@ export default function Header() {
             />
           </span>
           <span className={styles.brandCopy}>
-            <strong>Vya IA</strong>
-            <span>Inteligência que cuida e transforma</span>
+            <strong>Inteligência que cuida e transforma</strong>
+            <span>Consultoria em IA aplicada a negócios reais</span>
           </span>
         </Link>
 
