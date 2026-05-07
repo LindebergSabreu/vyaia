@@ -19,12 +19,12 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link href="/#hero" className={styles.logoSection} onClick={() => setIsMenuOpen(false)}>
-          <span className={styles.logoMark} aria-hidden="true">
+          <span className={styles.logoMark}>
             <Image
-              src="/logo-vya-ia.png"
-              alt=""
-              width={1024}
-              height={1024}
+              src="/logo-vya-ia.webp"
+              alt="Vya IA"
+              width={150}
+              height={58}
               priority
               className={styles.logoImage}
             />
