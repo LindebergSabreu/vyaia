@@ -19,15 +19,20 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link href="/#hero" className={styles.logoSection} onClick={() => setIsMenuOpen(false)}>
-          <Image
-            src="/logo-vya-ia.webp"
-            alt="Vya IA"
-            width={170}
-            height={66}
-            priority
-            className={styles.logoImage}
-          />
-          <span className={styles.tagline}>Inteligência que cuida e transforma</span>
+          <span className={styles.logoMark} aria-hidden="true">
+            <Image
+              src="/logo-vya-ia.png"
+              alt=""
+              width={1024}
+              height={1024}
+              priority
+              className={styles.logoImage}
+            />
+          </span>
+          <span className={styles.brandCopy}>
+            <strong>Vya IA</strong>
+            <span>Inteligência que cuida e transforma</span>
+          </span>
         </Link>
 
         <button

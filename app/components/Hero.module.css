@@ -110,9 +110,28 @@
   padding: clamp(1.25rem, 3vw, 2rem);
 }
 
-.logo {
-  display: block;
+.visualIntro {
+  background: linear-gradient(135deg, #1f3a52, #0f766e);
+  border-radius: 8px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
   margin-bottom: 1.25rem;
+  padding: 1.2rem;
+}
+
+.visualIntro span {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.visualIntro strong {
+  font-size: 1.35rem;
+  line-height: 1.2;
 }
 
 .panelHeader {

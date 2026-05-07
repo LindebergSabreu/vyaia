@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import styles from "./Hero.module.css";
 
@@ -49,14 +48,10 @@ export default function Hero() {
         </div>
 
         <aside className={styles.visual} aria-label="Modelo de atuação da Vya IA">
-          <Image
-            src="/logo-vya-ia.webp"
-            alt="Vya IA"
-            width={180}
-            height={70}
-            priority
-            className={styles.logo}
-          />
+          <div className={styles.visualIntro}>
+            <span>Diagnóstico executivo</span>
+            <strong>Plano de adoção de IA</strong>
+          </div>
           <div className={styles.panelHeader}>
             <span>Plano de adoção</span>
             <strong>IA responsável</strong>
