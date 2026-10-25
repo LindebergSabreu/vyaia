@@ -21,7 +21,7 @@ const servicos = [
   {
     title: "Plataformas SaaS & APIs",
     description:
-      "Arquitetura e integração de recursos de IA em sistemas, portais, APIs e plataformas escaláveis.",
+      "Produtos digitais e recursos de IA para necessidades específicas. Conheça as plataformas em desenvolvimento.",
     color: "plataformas",
     href: "/servicos/plataformas-saas",
     label: "Tecnologia",

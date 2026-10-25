@@ -1,54 +1,35 @@
-'use client';
-
+import type { Metadata } from 'next';
 import Link from 'next/link';
+import s from './dados.module.css';
+
+export const metadata: Metadata = {
+  title: 'Plataformas SaaS & APIs',
+  alternates: { canonical: '/servicos/plataformas-saas' },
+};
 
 export default function PlataformasSaaS() {
-  return (
-    <main>
-        <section style={{ padding: '60px 20px', maxWidth: '1200px', margin: '0 auto' }}>
-          <div style={{ marginBottom: '40px' }}>
-            <h1 style={{ color: '#4FC3DC', fontSize: '2.5rem', marginBottom: '20px' }}>
-              Plataformas SaaS & APIs
-            </h1>
-            <p style={{ fontSize: '1.1rem', color: '#666', lineHeight: '1.6' }}>
-              Integração facilitada de capacidades de IA ao seu ecossistema. Plataformas escaláveis, robustas e acessíveis.
-            </p>
-          </div>
-
-          <div style={{ backgroundColor: '#f9f9f9', padding: '30px', borderRadius: '8px', marginBottom: '40px' }}>
-            <h2 style={{ color: '#4FC3DC', marginBottom: '20px' }}>Benefícios de nossas plataformas</h2>
-            <ul style={{ lineHeight: '2', color: '#555' }}>
-              <li>✓ Infraestrutura em nuvem altamente escalável</li>
-              <li>✓ APIs simples e bem documentadas</li>
-              <li>✓ Segurança de nível empresarial</li>
-              <li>✓ SLA garantido e suporte 24/7</li>
-              <li>✓ Dashboard de analytics e monitoramento</li>
-              <li>✓ Preço baseado em uso - pague apenas pelo que usar</li>
-            </ul>
-          </div>
-
-          <div style={{ backgroundColor: '#E0F7FA', padding: '30px', borderRadius: '8px' }}>
-            <h2 style={{ color: '#4FC3DC', marginBottom: '20px' }}>Capacidades disponíveis</h2>
-            <p style={{ color: '#555', lineHeight: '1.6' }}>
-              Visão computacional, processamento de linguagem natural, análise preditiva, recomendações inteligentes e muito mais. 
-              Escolha os módulos que você precisa e adicione novos conforme seu negócio cresce.
-            </p>
-          </div>
-
-          <div style={{ marginTop: '40px', textAlign: 'center' }}>
-            <Link href="/#contato" style={{
-              backgroundColor: '#4FC3DC',
-              color: 'white',
-              padding: '15px 40px',
-              borderRadius: '8px',
-              textDecoration: 'none',
-              fontSize: '1.1rem',
-              display: 'inline-block'
-            }}>
-              Experimentar Plataforma
-            </Link>
-          </div>
-        </section>
-      </main>
-  );
+  return <div className={s.page}>
+    <nav aria-label="Caminho da página" className={s.breadcrumb}><Link href="/#servicos">Serviços</Link> / Plataformas SaaS & APIs</nav>
+    <section className={s.hero}>
+      <span className={s.kicker}>Produtos digitais da Vya IA</span>
+      <h1>Plataformas SaaS & APIs</h1>
+      <p>Produtos para resolver necessidades específicas de negócio, com funcionalidades e integrações que evoluem a partir de problemas concretos.</p>
+      <div className={s.actions}><a className={s.button} href="#produtos">Explorar os produtos →</a></div>
+    </section>
+    <section id="produtos" className="anchor" aria-labelledby="titulo-produtos">
+      <h2 id="titulo-produtos">Conheça os produtos em desenvolvimento</h2>
+      <p className={s.intro}>Este espaço reúne as plataformas da Vya IA. O primeiro produto apresentado é a Vya Dados; novos produtos terão suas próprias páginas conforme forem definidos e desenvolvidos.</p>
+      <article className={s.card}>
+        <span className={s.badge}>Em desenvolvimento · demonstração local</span>
+        <h3>Vya Dados</h3>
+        <p>Ferramentas para preparar arquivos, organizar cadastros e conferir dados. Um produto com módulos de tratamento, importação e qualidade, começando por um fluxo de preparo para o Bling.</p>
+        <Link className={s.secondary} href="/servicos/plataformas-saas/vya-dados">Conhecer a Vya Dados →</Link>
+      </article>
+    </section>
+    <section className={s.panel}>
+      <h2>Uma plataforma para cada necessidade</h2>
+      <p>O escopo e o estágio de cada produto são apresentados em sua página. Assinaturas, APIs públicas e integrações só serão anunciadas quando estiverem disponíveis e validadas.</p>
+      <Link className={s.secondary} href="/#contato">Conversar sobre uma necessidade</Link>
+    </section>
+  </div>;
 }

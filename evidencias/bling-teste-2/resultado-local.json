@@ -1,0 +1,439 @@
+[
+  {
+    "line": 2,
+    "original": {
+      "sku": "  VYA-T2-000001  ",
+      "descricao": "  Caneta azul TESTE 1  ",
+      "preco_venda": "12,50",
+      "unidade": "UN",
+      "ncm": "9608.10.00",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "values": {
+      "sku": "VYA-T2-000001",
+      "descricao": "Caneta azul TESTE 1",
+      "preco_venda": "12.50",
+      "unidade": "UN",
+      "ncm": "96081000",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "issues": [],
+    "changes": [
+      "Código / SKU: \"  VYA-T2-000001  \" → \"VYA-T2-000001\"",
+      "Descrição: \"  Caneta azul TESTE 1  \" → \"Caneta azul TESTE 1\"",
+      "Preço de venda (BR): \"12,50\" → \"12.50\"",
+      "NCM: \"9608.10.00\" → \"96081000\""
+    ]
+  },
+  {
+    "line": 3,
+    "original": {
+      "sku": "VYA-T2-000002",
+      "descricao": "Caneta azul TESTE 2",
+      "preco_venda": " R$ 1.234,56 ",
+      "unidade": "UN",
+      "ncm": "9608.10.00",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "values": {
+      "sku": "VYA-T2-000002",
+      "descricao": "Caneta azul TESTE 2",
+      "preco_venda": "1234.56",
+      "unidade": "UN",
+      "ncm": "96081000",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "issues": [],
+    "changes": [
+      "Preço de venda (BR): \" R$ 1.234,56 \" → \"1234.56\"",
+      "NCM: \"9608.10.00\" → \"96081000\""
+    ]
+  },
+  {
+    "line": 4,
+    "original": {
+      "sku": "VYA-T2-000003",
+      "descricao": "Caneta azul TESTE 3",
+      "preco_venda": "12,50",
+      "unidade": " un ",
+      "ncm": "9608.10.00",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "values": {
+      "sku": "VYA-T2-000003",
+      "descricao": "Caneta azul TESTE 3",
+      "preco_venda": "12.50",
+      "unidade": "UN",
+      "ncm": "96081000",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "issues": [],
+    "changes": [
+      "Preço de venda (BR): \"12,50\" → \"12.50\"",
+      "Unidade: \" un \" → \"UN\"",
+      "NCM: \"9608.10.00\" → \"96081000\""
+    ]
+  },
+  {
+    "line": 5,
+    "original": {
+      "sku": "VYA-T2-000004",
+      "descricao": "Caneta azul TESTE 4",
+      "preco_venda": "12,50",
+      "unidade": "UN",
+      "ncm": " 9608.10.00 ",
+      "origem": " 0 ",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "values": {
+      "sku": "VYA-T2-000004",
+      "descricao": "Caneta azul TESTE 4",
+      "preco_venda": "12.50",
+      "unidade": "UN",
+      "ncm": "96081000",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "issues": [],
+    "changes": [
+      "Preço de venda (BR): \"12,50\" → \"12.50\"",
+      "NCM: \" 9608.10.00 \" → \"96081000\"",
+      "Origem fiscal: \" 0 \" → \"0\""
+    ]
+  },
+  {
+    "line": 6,
+    "original": {
+      "sku": "VYA-T2-000005",
+      "descricao": "Caneta azul TESTE 5",
+      "preco_venda": "00012,5",
+      "unidade": "UN",
+      "ncm": "9608.10.00",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "values": {
+      "sku": "VYA-T2-000005",
+      "descricao": "Caneta azul TESTE 5",
+      "preco_venda": "12.50",
+      "unidade": "UN",
+      "ncm": "96081000",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "issues": [],
+    "changes": [
+      "Preço de venda (BR): \"00012,5\" → \"12.50\"",
+      "NCM: \"9608.10.00\" → \"96081000\""
+    ]
+  },
+  {
+    "line": 7,
+    "original": {
+      "sku": "VYA-T2-000006",
+      "descricao": "Caneta \"Especial\"; azul\nTESTE",
+      "preco_venda": "12,50",
+      "unidade": "UN",
+      "ncm": "9608.10.00",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "values": {
+      "sku": "VYA-T2-000006",
+      "descricao": "Caneta \"Especial\"; azul\nTESTE",
+      "preco_venda": "12.50",
+      "unidade": "UN",
+      "ncm": "96081000",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "issues": [],
+    "changes": [
+      "Preço de venda (BR): \"12,50\" → \"12.50\"",
+      "NCM: \"9608.10.00\" → \"96081000\""
+    ]
+  },
+  {
+    "line": 8,
+    "original": {
+      "sku": "VYA-T2-000000000000012340",
+      "descricao": "Caneta azul TESTE 7",
+      "preco_venda": "12,50",
+      "unidade": "UN",
+      "ncm": "9608.10.00",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "values": {
+      "sku": "VYA-T2-000000000000012340",
+      "descricao": "Caneta azul TESTE 7",
+      "preco_venda": "12.50",
+      "unidade": "UN",
+      "ncm": "96081000",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "issues": [],
+    "changes": [
+      "Preço de venda (BR): \"12,50\" → \"12.50\"",
+      "NCM: \"9608.10.00\" → \"96081000\""
+    ]
+  },
+  {
+    "line": 9,
+    "original": {
+      "sku": "VYA-T2-000008",
+      "descricao": "Caneta azul TESTE 8",
+      "preco_venda": "0,00",
+      "unidade": "UN",
+      "ncm": "9608.10.00",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "values": {
+      "sku": "VYA-T2-000008",
+      "descricao": "Caneta azul TESTE 8",
+      "preco_venda": "0.00",
+      "unidade": "UN",
+      "ncm": "96081000",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "issues": [],
+    "changes": [
+      "Preço de venda (BR): \"0,00\" → \"0.00\"",
+      "NCM: \"9608.10.00\" → \"96081000\""
+    ]
+  },
+  {
+    "line": 10,
+    "original": {
+      "sku": "VYA-T2-DUP001",
+      "descricao": "Caneta azul TESTE 9",
+      "preco_venda": "12,50",
+      "unidade": "UN",
+      "ncm": "9608.10.00",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "values": {
+      "sku": "VYA-T2-DUP001",
+      "descricao": "Caneta azul TESTE 9",
+      "preco_venda": "12.50",
+      "unidade": "UN",
+      "ncm": "96081000",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "issues": [
+      "Código repetido no lote"
+    ],
+    "changes": [
+      "Preço de venda (BR): \"12,50\" → \"12.50\"",
+      "NCM: \"9608.10.00\" → \"96081000\""
+    ]
+  },
+  {
+    "line": 11,
+    "original": {
+      "sku": " VYA-T2-DUP001 ",
+      "descricao": "Caneta azul TESTE 10",
+      "preco_venda": "12,50",
+      "unidade": "UN",
+      "ncm": "9608.10.00",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "values": {
+      "sku": "VYA-T2-DUP001",
+      "descricao": "Caneta azul TESTE 10",
+      "preco_venda": "12.50",
+      "unidade": "UN",
+      "ncm": "96081000",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "issues": [
+      "Código repetido no lote"
+    ],
+    "changes": [
+      "Código / SKU: \" VYA-T2-DUP001 \" → \"VYA-T2-DUP001\"",
+      "Preço de venda (BR): \"12,50\" → \"12.50\"",
+      "NCM: \"9608.10.00\" → \"96081000\""
+    ]
+  },
+  {
+    "line": 12,
+    "original": {
+      "sku": "VYA-T2-000011",
+      "descricao": "   ",
+      "preco_venda": "12,50",
+      "unidade": "UN",
+      "ncm": "9608.10.00",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "values": {
+      "sku": "VYA-T2-000011",
+      "descricao": "",
+      "preco_venda": "12.50",
+      "unidade": "UN",
+      "ncm": "96081000",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "issues": [
+      "Descrição ausente"
+    ],
+    "changes": [
+      "Descrição: \"   \" → \"\"",
+      "Preço de venda (BR): \"12,50\" → \"12.50\"",
+      "NCM: \"9608.10.00\" → \"96081000\""
+    ]
+  },
+  {
+    "line": 13,
+    "original": {
+      "sku": "VYA-T2-000012",
+      "descricao": "Caneta azul TESTE 12",
+      "preco_venda": "1,234",
+      "unidade": "UN",
+      "ncm": "9608.10.00",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "values": {
+      "sku": "VYA-T2-000012",
+      "descricao": "Caneta azul TESTE 12",
+      "preco_venda": "1,234",
+      "unidade": "UN",
+      "ncm": "96081000",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "issues": [
+      "Preço inválido: use formato brasileiro, como 1.234,56"
+    ],
+    "changes": [
+      "NCM: \"9608.10.00\" → \"96081000\""
+    ]
+  },
+  {
+    "line": 14,
+    "original": {
+      "sku": "VYA-T2-000013",
+      "descricao": "Caneta azul TESTE 13",
+      "preco_venda": "12,50",
+      "unidade": "UN",
+      "ncm": "99999999",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "values": {
+      "sku": "VYA-T2-000013",
+      "descricao": "Caneta azul TESTE 13",
+      "preco_venda": "12.50",
+      "unidade": "UN",
+      "ncm": "99999999",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "issues": [
+      "NCM ausente ou não encontrado no snapshot local"
+    ],
+    "changes": [
+      "Preço de venda (BR): \"12,50\" → \"12.50\""
+    ]
+  },
+  {
+    "line": 15,
+    "original": {
+      "sku": "VYA-T2-000014",
+      "descricao": "Caneta azul TESTE 14",
+      "preco_venda": "12,50",
+      "unidade": "UN",
+      "ncm": "9608.10.00",
+      "origem": "9",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "values": {
+      "sku": "VYA-T2-000014",
+      "descricao": "Caneta azul TESTE 14",
+      "preco_venda": "12.50",
+      "unidade": "UN",
+      "ncm": "96081000",
+      "origem": "9",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "issues": [
+      "Origem fiscal deve estar entre 0 e 8"
+    ],
+    "changes": [
+      "Preço de venda (BR): \"12,50\" → \"12.50\"",
+      "NCM: \"9608.10.00\" → \"96081000\""
+    ]
+  },
+  {
+    "line": 16,
+    "original": {
+      "sku": "VYA-T2-000015",
+      "descricao": "Caneta azul TESTE 15",
+      "preco_venda": "12,50",
+      "unidade": "pacote sem quantidade",
+      "ncm": "9608.10.00",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "values": {
+      "sku": "VYA-T2-000015",
+      "descricao": "Caneta azul TESTE 15",
+      "preco_venda": "12.50",
+      "unidade": "PACOTE SEM QUANTIDADE",
+      "ncm": "96081000",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "issues": [
+      "Unidade fora do perfil: use UN ou CX"
+    ],
+    "changes": [
+      "Preço de venda (BR): \"12,50\" → \"12.50\"",
+      "Unidade: \"pacote sem quantidade\" → \"PACOTE SEM QUANTIDADE\"",
+      "NCM: \"9608.10.00\" → \"96081000\""
+    ]
+  },
+  {
+    "line": 17,
+    "original": {
+      "sku": "VYA-T2-000016",
+      "descricao": "=1+1",
+      "preco_venda": "12,50",
+      "unidade": "UN",
+      "ncm": "9608.10.00",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "values": {
+      "sku": "VYA-T2-000016",
+      "descricao": "=1+1",
+      "preco_venda": "12.50",
+      "unidade": "UN",
+      "ncm": "96081000",
+      "origem": "0",
+      "ficha_tecnica": "caneta esferográfica, tinta azul, escrita manual"
+    },
+    "issues": [
+      "Texto com início de fórmula: revisar"
+    ],
+    "changes": [
+      "Preço de venda (BR): \"12,50\" → \"12.50\"",
+      "NCM: \"9608.10.00\" → \"96081000\""
+    ]
+  }
+]

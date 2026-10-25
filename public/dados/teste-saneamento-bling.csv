@@ -1,0 +1,18 @@
+﻿sku;descricao;preco_venda;unidade;ncm;origem;ficha_tecnica
+  000001  ;  Caneta azul TESTE 1  ;12,50;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+000002;Caneta azul TESTE 2; R$ 1.234,56 ;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+000003;Caneta azul TESTE 3;12,50; un ;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+000004;Caneta azul TESTE 4;12,50;UN; 9608.10.00 ; 0 ;caneta esferográfica, tinta azul, escrita manual
+000005;Caneta azul TESTE 5;00012,5;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+000006;"Caneta ""Especial""; azul
+TESTE";12,50;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+000000000000012340;Caneta azul TESTE 7;12,50;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+000008;Caneta azul TESTE 8;0,00;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+DUP001;Caneta azul TESTE 9;12,50;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+ DUP001 ;Caneta azul TESTE 10;12,50;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+000011;   ;12,50;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+000012;Caneta azul TESTE 12;1,234;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+000013;Caneta azul TESTE 13;12,50;UN;99999999;0;caneta esferográfica, tinta azul, escrita manual
+000014;Caneta azul TESTE 14;12,50;UN;9608.10.00;9;caneta esferográfica, tinta azul, escrita manual
+000015;Caneta azul TESTE 15;12,50;pacote sem quantidade;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+000016;=1+1;12,50;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
