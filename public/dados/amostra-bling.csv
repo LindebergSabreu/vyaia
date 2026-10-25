@@ -1,0 +1,22 @@
+﻿linha;sku;descricao;preco_venda;unidade;ncm;origem;ficha_tecnica
+1;000001;Caneta esferográfica azul VYA TESTE;12,50;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+2;000002;Caneta esferográfica azul VYA TESTE;R$ 1.234,56;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+3;000003;Bloco de notas VYA TESTE;12,50;UN;;0;bloco de notas de papel, sem pauta
+4;000004;Caneta esferográfica azul VYA TESTE;12,50;UN;;0;caneta esferográfica, tinta azul, escrita manual
+5;000005;Caneta esferográfica azul VYA TESTE;0,00;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+6;000006;Caneta esferográfica azul VYA TESTE;12,50; un ;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+7;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX;Caneta esferográfica azul VYA TESTE;12,50;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+8;000008;Caneta esferográfica azul VYA TESTE;-10,00;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+9;000009;Caneta esferográfica azul VYA TESTE;1,234;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+10;000010;;12,50;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+11;000011;Caneta esferográfica azul VYA TESTE;12,50;UN;99999999;0;caneta esferográfica, tinta azul, escrita manual
+12;000012;Camiseta;12,50;UN;;0;camiseta sem composição informada
+13;DUP000000;Caneta esferográfica azul VYA TESTE;12,50;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+14;DUP000000;Caneta esferográfica azul VYA TESTE;99,90;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+15;000015;Caneta esferográfica azul VYA TESTE;12,50;UN;9608.10.00;9;caneta esferográfica, tinta azul, escrita manual
+16;000016;Caneta esferográfica azul VYA TESTE;12,50;pacote de quantidade desconhecida;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+17;000017;=1+1;12,50;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+18;000018;"Caneta ""Especial""; azul
+VYA TESTE";12,50;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+19;0000000000000000000012340;Caneta esferográfica azul VYA TESTE;12,50;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual
+20;000020;Caneta esferográfica azul VYA TESTE;1234.56;UN;9608.10.00;0;caneta esferográfica, tinta azul, escrita manual

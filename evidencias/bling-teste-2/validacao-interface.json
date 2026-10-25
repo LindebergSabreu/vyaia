@@ -1,0 +1,10 @@
+{
+  "saida_interface_igual_arquivo_importado": true,
+  "sha256": "99fa4cbbb581a81283a8b9f5ac530b0e5cd7b51c4f60ecec8042df1b090a076e",
+  "bytes": 3040,
+  "metodo_entrada": "Seletor nativo do macOS",
+  "registros_liberados": 8,
+  "registros_recebidos": 16,
+  "comparacao_retorno_bling": "48 campos sem divergências, conforme reconciliacao.json",
+  "limite": "Envio automatizado por filechooser.setFiles ficou pendente; causa interna não confirmada. Leitura pelo seletor nativo e download pela interface concluídos."
+}

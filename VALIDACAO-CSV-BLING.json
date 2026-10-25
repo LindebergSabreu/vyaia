@@ -1,0 +1,66 @@
+{
+  "sourceRecords": 16,
+  "expectedAccepted": 8,
+  "exportedRecords": 8,
+  "matched": 6,
+  "missing": [
+    "000000000000012340",
+    "000008"
+  ],
+  "extra": [
+    "0000000000000000000012340",
+    "000018"
+  ],
+  "diffs": [
+    {
+      "code": "000001",
+      "field": "descricao",
+      "expected": "Caneta azul TESTE 1",
+      "received": "Caneta esferográfica azul VYA TESTE"
+    },
+    {
+      "code": "000002",
+      "field": "descricao",
+      "expected": "Caneta azul TESTE 2",
+      "received": "Caneta esferográfica azul VYA TESTE"
+    },
+    {
+      "code": "000003",
+      "field": "descricao",
+      "expected": "Caneta azul TESTE 3",
+      "received": "Bloco de notas VYA TESTE"
+    },
+    {
+      "code": "000003",
+      "field": "ncm",
+      "expected": "96081000",
+      "received": "48201000"
+    },
+    {
+      "code": "000004",
+      "field": "descricao",
+      "expected": "Caneta azul TESTE 4",
+      "received": "Caneta esferográfica azul VYA TESTE"
+    },
+    {
+      "code": "000005",
+      "field": "descricao",
+      "expected": "Caneta azul TESTE 5",
+      "received": "Caneta esferográfica azul VYA TESTE"
+    },
+    {
+      "code": "000005",
+      "field": "preco_venda",
+      "expected": "12.50",
+      "received": "0.00"
+    },
+    {
+      "code": "000006",
+      "field": "descricao",
+      "expected": "Caneta \"Especial\"; azul\nTESTE",
+      "received": "Caneta esferográfica azul VYA TESTE"
+    }
+  ],
+  "previousOutputCodesEqualBlingIds": true,
+  "normalization": "Removida exatamente uma tabulação final do Código do exportador; NCM sem pontos; preço com ponto decimal."
+}

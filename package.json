@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:bling": "node --test tests/bling.test.mjs tests/bling-session.test.mjs",
+    "test:prepara": "node --test tests/prepara.test.mjs",
+    "test:confere": "node --test tests/confere.test.mjs"
   },
   "dependencies": {
     "next": "^16.0.8",
